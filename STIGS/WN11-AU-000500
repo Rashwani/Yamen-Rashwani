@@ -1,4 +1,3 @@
-<#
 .SYNOPSIS
     This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
 
@@ -23,7 +22,6 @@
     Put any usage instructions here.
     Example syntax:
     PS C:\> .\(STIG-ID-WN11-AU-000500).ps1 
-#>
 
 New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application" -Force | Out-Null
 
